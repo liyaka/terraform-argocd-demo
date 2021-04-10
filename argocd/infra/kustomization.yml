@@ -5,7 +5,7 @@ resources:
   - argo-service_monitor.yaml
   # - cert-manager.yaml
   # - external-dns.yaml
-  - external-secrets.yml
+  # - external-secrets.yml
   - loki.yaml
   # - nginx.yaml
   - prometheus-operator.yaml
