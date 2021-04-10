@@ -13,4 +13,4 @@ spec:
     targetRevision: master
     helm:
       valueFiles:
-        - helm-chart/dummy-apps/values-prod.yaml
+        - helm-chart/dummy-app/values-prod.yaml

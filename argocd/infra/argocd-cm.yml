@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/part-of: argocd
 data:
   repositories: |
-    - name: ndummy-app-helm-charts
+    - name: dummy-app-helm-charts
       type: git
       url: git@github.com:liyaka/dummy-app-service.git
     - name: prometheus-community
