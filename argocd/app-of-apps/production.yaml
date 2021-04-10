@@ -6,7 +6,7 @@ metadata:
   labels:
     group: argocd
 spec:
-  project: dummy
+  project: dummy-app
   source:
     repoURL: git@github.com:liyaka/terraform-argocd-demo.git
     path: argocd/app-of-apps/envs/production

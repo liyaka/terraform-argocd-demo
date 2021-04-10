@@ -39,8 +39,8 @@ spec:
                 cache_location: /data/loki/boltdb-shipper-cache
           serviceAccount:
             create: true
-            annotations:
-              iam.gke.io/gcp-service-account: gke-node@nexite-production.iam.gserviceaccount.com
+            # annotations:
+            #   iam.gke.io/gcp-service-account: gke-node@nexite-production.iam.gserviceaccount.com
 
   syncPolicy:
     automated:

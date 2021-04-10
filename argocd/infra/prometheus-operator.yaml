@@ -5,7 +5,7 @@ metadata:
   name: prometheus-community
   namespace: argocd
 spec:
-  project: nexite
+  project: dummy-app
   destination:
     server: https://kubernetes.default.svc
     namespace: prometheus

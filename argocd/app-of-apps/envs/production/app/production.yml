@@ -6,7 +6,7 @@ metadata:
   labels:
     group: production
 spec:
-  project: dummy
+  project: dummy-app
   source:
     repoURL: git@github.com:liyaka/terraform-argocd-demo.git
     path: argo/overlays/production/app

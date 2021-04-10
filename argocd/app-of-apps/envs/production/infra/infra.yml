@@ -6,10 +6,10 @@ metadata:
   labels:
     group: infra
 spec:
-  project: nexite
+  project: dummy-app
   source:
-    repoURL: git@bitbucket.org:nexite/helm.git
-    path: argo/overlays/production/infra
+    repoURL: git@github.com:liyaka/terraform-argocd-demo.git
+    path: argocd/overlays/production/infra
     targetRevision: master
   destination:
     server: https://kubernetes.default.svc

@@ -7,7 +7,7 @@ commonLabels:
   variant: infra
 
 commonAnnotations:
-  note: Dummy Production Environment
+  note: Dummy-App Production Environment
 
 resources:
   - ../../../infra
