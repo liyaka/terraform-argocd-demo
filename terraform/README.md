@@ -61,5 +61,5 @@ Connect to the cluster
 ```bash
 aws eks update-kubeconfig --name <cluster name> --region <region> --role-arn <Role ARN>
 like:
-aws eks update-kubeconfig --name polyrize-prod --region eu-central-1 --role-arn arn:aws:iam::329054710135:role/liya-ops
+aws eks update-kubeconfig --name liya-prod --region eu-west-1 --role-arn arn:aws:iam::329054710135:role/liya-ops
 ```

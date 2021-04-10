@@ -1,0 +1,15 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - argo-service_monitor.yaml
+  # - cert-manager.yaml
+  # - external-dns.yaml
+  - external-secrets.yml
+  - loki.yaml
+  # - nginx.yaml
+  - prometheus-operator.yaml
+  - argocd-cm.yml
+  # - kube-slack.yaml
+  # - prometheus-adapter.yaml
+  # - nvidia-drivers.yaml

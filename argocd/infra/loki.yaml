@@ -1,0 +1,15 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: loki-stack
+  namespace: argocd
+spec:
+  project: nexite
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: loki
+  source:
+    chart: loki-stack
+    targetRevision: 2.3.0
+    repoURL: https://grafana.github.io/helm-charts
