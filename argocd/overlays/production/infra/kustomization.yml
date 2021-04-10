@@ -9,8 +9,8 @@ commonLabels:
 commonAnnotations:
   note: Dummy Production Environment
 
-# resources:
-#   - ../../../infra
+resources:
+  - ../../../infra
 #   - argo-ingress.yaml
 #   - clusterIssuer-letsencrypt-prod.yaml
 #   - default_service_account.yaml
