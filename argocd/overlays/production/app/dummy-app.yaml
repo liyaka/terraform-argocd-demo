@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: dummy-app
+  namespace: argocd
+spec:
+  destination:
+    namespace: production
+  source:
+    helm:
+      values: |
+        replicaCount: 1
+        image:
+          tag: 1.0.6
+
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

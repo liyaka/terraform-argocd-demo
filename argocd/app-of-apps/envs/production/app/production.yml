@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: production
+  namespace: argocd
+  labels:
+    group: production
+spec:
+  project: dummy
+  source:
+    repoURL: git@github.com:liyaka/terraform-argocd-demo.git
+    path: argo/overlays/production/app
+    targetRevision: master
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: production
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

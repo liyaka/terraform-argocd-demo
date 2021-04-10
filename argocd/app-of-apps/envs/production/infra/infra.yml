@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: infra
+  namespace: argocd
+  labels:
+    group: infra
+spec:
+  project: nexite
+  source:
+    repoURL: git@bitbucket.org:nexite/helm.git
+    path: argo/overlays/production/infra
+    targetRevision: master
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: infra
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

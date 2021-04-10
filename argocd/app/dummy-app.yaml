@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: alerts
+  namespace: argocd
+spec:
+  project: dummy
+  destination:
+    server: "https://kubernetes.default.svc"
+  source:
+    path: helm-chart/dummy-app
+    repoURL: "git@github.com:liyaka/dummy-app-service.git"
+    targetRevision: master
+    helm:
+      valueFiles:
+        - helm-chart/dummy-apps/values-prod.yaml
